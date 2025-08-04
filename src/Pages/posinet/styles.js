@@ -3,15 +3,20 @@ import { css } from "@emotion/react";
 export const layout = css`
     background-color: white;
     padding: 2rem;
+    height: 8rem;
 `;
 
 export const container = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 120rem;
+    max-width: 100%;
     margin: 0 auto;
     padding: 1rem 2rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 39%;
+    border-bottom: 0.1rem solid #d1d8e4;
 `;
 
 export const logo = css`
@@ -19,9 +24,6 @@ export const logo = css`
     margin: 0 auto;
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 39%;
     color: #443f92;
     cursor: pointer;
     text-decoration: none;
@@ -47,8 +49,6 @@ export const searchBox = css`
         border-radius: 1.2rem 0 0 1.2rem;
         outline: 0;
         font-size: 1.3rem;
-        
-        
     }
 
     & > button {
@@ -72,20 +72,10 @@ export const searchBox = css`
 export const NavContainer = css`
     width: 100%;
     background-color: #fff;
-    border-bottom: 0.1rem solid #e82f2f;
+    border-bottom: 0.2rem solid #e82f2f;
 
     &:hover {
         color: #e72f2f;
-    }
-
-    nav > a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 14.28%;
-        height: 100%;
-        text-align: center;
-        cursor: pointer;
     }
 `;
 
@@ -98,12 +88,44 @@ export const navBox = css`
     width: 100%;
     height: 100%;
     gap: 2rem;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     cursor: pointer;
     
     & > a {
         text-decoration: none;
         color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14.28%;
+        height: 100%;
+        text-align: center;
+        cursor: pointer;
     }
 `;
 
+export const MainContainer = css`
+    width: 106rem;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+`;
+
+export const MainLayout = css`
+    display: flex;
+    width: 80rem;
+    flex: 0 0 auto;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0 1rem 0 0;
+    
+    & > header {
+        margin: 0 0 1rem 0;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    
+`;

@@ -2,7 +2,8 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Auth from '../Pages/Auth/Auth';
 import Posinet from '../Pages/posinet/Posinet';
-import MainLayout from '../components/Layout/MainLayout/MainLayout';
+import MainLayout from '../components/Layout/MainLayout/MainLAyout';
+
 
 
 function RootRoute(props) {

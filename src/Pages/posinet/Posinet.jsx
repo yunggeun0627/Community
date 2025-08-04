@@ -6,6 +6,8 @@ import { FaSearch } from 'react-icons/fa';
 
 
 function Posinet(props) {
+    
+
     return (
         <div css={s.layout}>
             <header>
@@ -30,18 +32,17 @@ function Posinet(props) {
                             <a href="community" target="_self">커뮤니티</a>
                             <a href="gallery" target="_self">갤러리</a>
                         </div>
-                    </div>
-            </header>
-            <main>
-                <div css={s.loginContainer}>
-                    <div>
-                        <p>
-
-                        </p>
-                    </div>
                 </div>
-            </main>
-            <footer></footer>
+                <main>
+                    <div css={s.MainContainer}>
+                        <div css={s.MainLayout}>
+                            <header>
+                                
+                            </header>
+                        </div>
+                    </div>
+                </main>
+            </header>
         </div>
     );
 }
