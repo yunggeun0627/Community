@@ -6,7 +6,7 @@ function AuthLayout({children}) {
     return (
         <div css={s.layout}>
             <div css={s.container}>
-                <h1 css={s.title}>포지넷 회원 가입</h1>
+                <h1 css={s.title}></h1>
                 {children}
             </div>
         </div>

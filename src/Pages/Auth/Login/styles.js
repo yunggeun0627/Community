@@ -18,12 +18,3 @@ export const submitButtonContainer = css`
         font-size: 1.4rem;
     }
 `;
-
-export const textFieldHelp = css`
-    box-sizing: border-box;
-    margin: 0;
-    margin-top: 0.2rem;
-    padding: 0 1rem;
-    color: #e00000;
-    text-align: left;
-`;
