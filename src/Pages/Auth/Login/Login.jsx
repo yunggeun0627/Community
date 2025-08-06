@@ -3,9 +3,9 @@ import * as s from './styles';
 import { Button, TextField } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import api from '../../../api/axios';
+// import api from '../../../api/axios';
 import Swal from 'sweetalert2';
-import { reqLogin } from '../../../api/authApi';
+// import { reqLogin } from '../../../api/authApi';
 import { QueryClient } from '@tanstack/react-query';
 
 function Login(props) {

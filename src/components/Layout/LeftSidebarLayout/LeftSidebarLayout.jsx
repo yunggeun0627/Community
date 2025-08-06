@@ -9,14 +9,12 @@ import { IoLogOut, IoSearch, IoSearchOutline } from 'react-icons/io5';
 import Swal from 'sweetalert2';
 import { FaRegEnvelope, FaRegEnvelopeOpen, FaRegUser, FaUser } from 'react-icons/fa';
 import { useQueryClient } from '@tanstack/react-query';
-import usePrincipalQuery from '../../../queries/usePrincipalQuery';
 
 
 function LeftSideBarLayout(props) {
     const navigate = useNavigate();
     const queryClient = useQueryClient();
     const location = useLocation();
-    const principalQuery = usePrincipalQuery();
     const MENUS = [
         {
             id: 1,
@@ -84,22 +82,27 @@ function LeftSideBarLayout(props) {
     ];
 
     return (
-        <div css={s.layout}>
-            <header>
-                <div>
-                    
+        <div css={s.bodylayout}>
+            <div css={s.headlayout}></div>
+            <div css={s.bannerheader}>
+                <button>
+                    <div>
+                        <span>
+
+                        </span>
+                    </div>
+                </button>
+                <button></button>
+            </div>
+            <header role='banner' css={s.headerlayout}>
+                <div css={s.bannertop}>
+                    <div css={s.bannerlayout}>
+
+                    </div>
                 </div>
             </header>
-            <main>
-                <div>
-
-                </div>
-            </main>
-            <footer>
-
-            </footer>
         </div>
-    );
+    )
 }
 
 export default LeftSideBarLayout;

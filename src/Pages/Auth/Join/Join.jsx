@@ -3,10 +3,10 @@ import * as s from './styles';
 import { Button, TextField } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { JOIN_REGEX, JOIN_REGEX_ERROR_MESSAGE } from '../../../constants/authRegex';
-import api from '../../../api/axios';
+// import api from '../../../api/axios';
 import Swal from 'sweetalert2';
 import { Link, useNavigate } from 'react-router-dom';
-import { reqJoin } from '../../../api/authApi';
+// import { reqJoin } from '../../../api/authApi';
 
 function Join(props) {
     const navigate = useNavigate();

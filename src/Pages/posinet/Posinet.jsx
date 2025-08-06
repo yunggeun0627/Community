@@ -11,9 +11,7 @@ function Posinet(props) {
         <div css={s.layout}>
             <header>
                 <div css={s.bannerContainer}>
-                    <div>
-
-                    </div>
+                    
                 </div>
             </header>
         </div>

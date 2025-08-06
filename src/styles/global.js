@@ -13,11 +13,10 @@ export const global = css`
     }
 
     html, body, #root {
-        display: flex;
         margin: 0;
         padding: 0;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         overflow: auto;
     }
 
