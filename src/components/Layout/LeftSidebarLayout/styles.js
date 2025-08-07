@@ -1,85 +1,54 @@
 import { css } from "@emotion/react";
 
-export const bodylayout = css`
-    display: flex;
-    position: relative;
+export const ContentBar = css`
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 0.1rem solid #e5e5e0;
+    height: 100vh;
+    width: 7.2rem;
+    z-index: 672;
+`; 
+
+export const layout = css`
     height: 100%;
-    width: 100%;
-    pointer-events: none !important;
-    flex: 1;
-    align-items: stretch;
-    background-color: rgba(0, 0, 0, 0);
+    padding-bottom: 1.6rem;
+    padding-top: 1.6rem;
     box-sizing: border-box;
-    border: 0rem solid black;
-    flex-direction: column;
-    list-style: none;
-    margin: 0rem;
-    min-height: 0rem;
-    min-width: 0rem;
-    padding: 0rem;
-    text-decoration: none;
-    z-index: 0;
 `;
 
-export const headlayout = css`
-    z-index: 1;
-    position: absolute;
-    pointer-events: auto;
-    right: 0rem;
-    top: 0rem;
-    left: 0rem;
-
-    & > button {
-        position: absolute;
-        background-color: #ffffff;
-        border-color: #cfd9de;
-        transition-duration: 0.2s;
-        cursor: pointer;
-    }
-    
-    & > div {
-        color: #0f1419;
-    }
-    
-    & > span {
-        line-height: 2rem;
-        word-wrap: break-word;
-        font-family: inherit;
-        max-width: 100%;
-        min-width: 0%;
-        font-size: 1.5rem;
-        white-space: nowrap;
-        text-align: inherit;
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-`;
-
-export const bannerheader = css`
-    min-height: 100dvh;
-    z-index: 0;
-    flex-direction: row;
-    width: 100%;
-    & > * {
-        pointer-events: auto;
-    }
-`
-
-export const headerlayout = css`
-    z-index: 3;
-    align-items: flex-end;
-    user-select: none;
-    flex-grow: 1;
-    `;
-
-export const bannertop = css`
-    transition: width 200ms ease-out;
-    width: 8.8rem;
-`;
-
-export const bannerlayout = css`
-    top: 0rem;
-    backface-visibility: hidden;
-    position: fixed;
+export const layout2 = css`
+    gap: 2.4rem;
     height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+`; 
+
+export const layout3 = css`
+    gap: 2.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+`;
+
+export const iconBox = css`
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    flex-direction: column;
+`;
+
+export const icon = css`
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 85ms ease-out;
+    background-color: #ffe1e100;
+    border: 0rem;
+    padding: 0rem;
+    cursor: pointer;
 `;

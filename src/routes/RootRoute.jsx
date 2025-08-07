@@ -4,7 +4,8 @@ import Auth from '../Pages/Auth/Auth';
 import Posinet from '../Pages/posinet/Posinet';
 import MainLayout from '../components/Layout/MainLayout/MainLAyout';
 import usePrincipalQuery from '../queries/usePrincipalQuery';
-import Loading from '../components/Layout/Loding/Loading';
+import Loading from '../components/Loading/Loading';
+
 
 function RootRoute(props) {
     const location = useLocation();

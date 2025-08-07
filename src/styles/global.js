@@ -10,17 +10,25 @@ export const global = css`
         font-weight: 400;
         font-style: normal;
         background-color: #f3f4f5;
+        overflow-y: scroll;
+        min-height: 100%;
     }
 
-    html, body, #root {
+    body {
         margin: 0;
         padding: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
+        min-height: 100%;
+        background-color: #f3f4f5;
+        display: flex;
+        justify-content: center;
     }
 
     #root {
+        width: 100%;
+        max-width: 140rem;
         font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 `;

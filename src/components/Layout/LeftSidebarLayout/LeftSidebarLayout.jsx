@@ -1,13 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import * as s from './styles';
-import { GoBell, GoBellFill, GoBook, GoBookmark, GoBookmarkFill, GoHome, GoHomeFill } from "react-icons/go";
-import { CgProfile } from "react-icons/cg";
-import { HiOutlineUsers, HiUsers } from "react-icons/hi";
+import { GoBell, GoBellFill, GoHome, GoHomeFill } from "react-icons/go";
+import { LuMessageCircleMore } from "react-icons/lu";
+import { AiFillMessage } from "react-icons/ai";
+import { IoSettings, IoSettingsOutline } from "react-icons/io5";
 import { useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { IoLogOut, IoSearch, IoSearchOutline } from 'react-icons/io5';
+import { MdAddBox, MdOutlineAddBox } from "react-icons/md";
 import Swal from 'sweetalert2';
-import { FaRegEnvelope, FaRegEnvelopeOpen, FaRegUser, FaUser } from 'react-icons/fa';
+import { FaCompass, FaRegCompass } from 'react-icons/fa';
 import { useQueryClient } from '@tanstack/react-query';
 
 
@@ -18,8 +19,8 @@ function LeftSideBarLayout(props) {
     const MENUS = [
         {
             id: 1,
-            path: "/",
-            name: "home",
+            path: "/Home",
+            name: "홈",
             icon: {
                 off: <GoHome />,
                 on: <GoHomeFill />,
@@ -27,81 +28,77 @@ function LeftSideBarLayout(props) {
         },
         {
             id: 2,
-            path: "/search",
-            name: "Search",
+            path: "/Home",
+            name: "홈",
             icon: {
-                off: <IoSearchOutline />,
-                on: <IoSearch />,
+                off: <GoHome />,
+                on: <GoHomeFill />,
             }
         },
         {
             id: 3,
-            path: "/timeLine",
-            name: "TimeLine",
+            path: "/Compass",
+            name: "탐색",
+            icon: {
+                off: <FaCompass />,
+                on: <FaRegCompass />,
+            }
+        },
+        {
+            id: 4,
+            path: "/Made",
+            name: "만들다",
+            icon: {
+                off: <MdOutlineAddBox />,
+                on: <MdAddBox />,
+            }
+        },
+        {
+            id: 5,
+            path: "/Update",
+            name: "업데이트",
             icon: {
                 off: <GoBell />,
                 on: <GoBellFill />,
             }
         },
         {
-            id: 4,
-            path: "/note",
-            name: "Note",
-            icon: {
-                off: <FaRegEnvelope />,
-                on: <FaRegEnvelopeOpen />,
-            }
-        },
-        {
-            id: 5,
-            path: "/bookMark",
-            name: "Bookmark",
-            icon: {
-                off: <GoBookmark />,
-                on: <GoBookmarkFill />,
-            }
-        },
-        {
             id: 6,
-            path: "/community",
-            name: "Community",
+            path: "/Message",
+            name: "메세지",
             icon: {
-                off: <HiOutlineUsers />,
-                on: <HiUsers />,
+                off: <LuMessageCircleMore />,
+                on: <AiFillMessage />,
             }
         },
         {
             id: 7,
-            path: "",
-            name: "",
-            Icon: {
-                off: <FaRegUser />,
-                on: <FaUser />
+            path: "/Option",
+            name: "추가 옵션",
+            icon: {
+                off: <IoSettingsOutline />,
+                on: <IoSettings />,
             }
-        },
+        }
     ];
 
     return (
-        <div css={s.bodylayout}>
-            <div css={s.headlayout}></div>
-            <div css={s.bannerheader}>
-                <button>
-                    <div>
-                        <span>
+        <nav id="Content" css={s.ContentBar}>
+            <div css={s.layout}>
+                <div css={s.layout2}>
+                    <div css={s.layout3}>
+                        <div css={s.iconBox}>
+                            <div css={s.icon}>
+                                <div>
 
-                        </span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </button>
-                <button></button>
-            </div>
-            <header role='banner' css={s.headerlayout}>
-                <div css={s.bannertop}>
-                    <div css={s.bannerlayout}>
-
-                    </div>
+                    <div></div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </nav>
     )
 }
 
