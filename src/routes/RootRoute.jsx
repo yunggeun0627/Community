@@ -5,6 +5,8 @@ import Posinet from '../Pages/posinet/Posinet';
 import MainLayout from '../components/Layout/MainLayout/MainLAyout';
 import usePrincipalQuery from '../queries/usePrincipalQuery';
 import Loading from '../components/Loading/Loading';
+import NotFound from '../Pages/NotFound/NotFound';
+import AdminRoute from './AdminRoute';
 
 
 function RootRoute(props) {
@@ -30,7 +32,9 @@ function RootRoute(props) {
             <MainLayout>
                 <Routes>
                     <Route path='/auth/*' element={<Auth />} />
-                    <Route path='/posinet' element={<Posinet />} />
+                    <Route path='/admin/*' element={<AdminRoute />} />
+                    <Route path='/' element={<Posinet />} />
+                    <Route path='*' element={ <NotFound /> } />
                 </Routes>
             </MainLayout>
         );

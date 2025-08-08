@@ -8,7 +8,7 @@ import Posinet from './Pages/posinet/Posinet';
 function App(props) {
   return (
       <RootLayout>
-        <Posinet />
+        <LeftSideBarLayout />
       </RootLayout>
   );
 }

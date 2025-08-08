@@ -2,15 +2,15 @@ import { Autocomplete, Button, ButtonGroup, FormLabel, Input, Pagination, Pagina
 import Grid from '@mui/material/Grid';
 import { DataGrid, useGridApiRef } from '@mui/x-data-grid';
 import React, { useEffect, useState } from 'react';
-import useSearchUserQuery from '../../queries/useSearchUserQuery';
+import useSearchUserQuery from '../../queries/useSearchUserquery';
 import Loading from '../../components/Loading/Loading';
 import { MODE_NAME } from '../../constants/mode';
-import { useModeStore } from '../../stores/useModeStore';
-import { useInputDataStore } from '../../stores/useInputStore';
+import { useModeStore } from '../../store/useModeStore';
+import { useInputDataStore } from '../../store/useInputStore';
 import Swal from 'sweetalert2';
 import { reqDeleteUser, reqRegisterUser } from '../../api/userApi';
 import { useQueryClient } from '@tanstack/react-query';
-import { useSearchUserStore } from '../../stores/useSearchUserStore';
+import { useSearchUserStore } from '../../store/useSearchUserStore';
 
 function HeaderButtons() {
     const [mode, setMode] = useState(MODE_NAME.NONE);
